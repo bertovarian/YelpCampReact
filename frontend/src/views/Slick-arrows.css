@@ -1,0 +1,32 @@
+.slick-prev:before,
+.slick-next:before {
+    color: lightblue;
+    font-size: 24px;
+    /* Adjust size if needed */
+}
+
+.slick-prev,
+.slick-next {
+    position: absolute;
+    top: 50%;
+    /* Center vertically */
+    transform: translateY(-50%);
+    /* Adjust for proper centering */
+    z-index: 2;
+    /* Ensure arrows are above the images */
+}
+
+.slick-prev {
+    left: 10px;
+    /* Position slightly inside the left edge of the image */
+}
+
+.slick-next {
+    right: 10px;
+    /* Position slightly inside the right edge of the image */
+}
+
+.slick-prev:hover:before,
+.slick-next:hover:before {
+    color: darkgray;
+}
