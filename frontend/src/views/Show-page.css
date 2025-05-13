@@ -1,0 +1,44 @@
+.map-container {
+    height: 300px;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.reviews-container {
+    max-height: 450px;
+    /* Adjust the height as needed */
+    overflow-y: auto;
+    padding-right: 5px;
+    /* Optional: Add padding to avoid scrollbar overlap */
+}
+
+/* Custom scrollbar styles for WebKit browsers (Chrome, Safari) */
+.reviews-container::-webkit-scrollbar {
+    width: 6px;
+    /* Width of the scrollbar */
+}
+
+.reviews-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    /* Background of the scrollbar track */
+}
+
+.reviews-container::-webkit-scrollbar-thumb {
+    background: #888;
+    /* Color of the scrollbar thumb */
+    border-radius: 10px;
+    /* Rounded corners for the scrollbar thumb */
+}
+
+.reviews-container::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    /* Color of the scrollbar thumb on hover */
+}
+
+@media (max-width: 767px) {
+    .reviews-container {
+        max-height: none;
+        overflow-y: visible;
+    }
+}

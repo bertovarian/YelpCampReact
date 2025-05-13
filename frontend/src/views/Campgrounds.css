@@ -1,0 +1,14 @@
+.campground-img {
+    width: 100%;
+    height: auto;
+    max-height: 18rem;
+}
+
+/* Styles for large screens */
+@media (min-width: 767.98px) {
+    .campground-img {
+        height: 18rem;
+        object-fit: cover;
+        /* Ensure the image covers the area without distortion */
+    }
+}

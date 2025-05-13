@@ -1,0 +1,11 @@
+diff --git a/README.md b/README.md
+index 6f6feac..a43a9ff 100644
+--- a/README.md
++++ b/README.md
+@@ -22,4 +22,4 @@ YelpCampReact is a full-stack web application inspired by Colt Steele's original
+   - Mapbox API for interactive maps
+   - OpenWeatherMap API for weather forecasting
+ - **Authentication**: JSON Web Tokens (JWT) and bcrypt for secure user authentication
+-- **Styling**: Custom CSS and Bootstrap for responsive design
++- **Styling**: Custom CSS and Bootstrap for responsive design.
+\ No newline at end of file
