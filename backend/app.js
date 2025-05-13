@@ -13,7 +13,10 @@ const reviewRoutes = require('./routes/review.js')
 const campRoutes = require('./routes/campground.js')
 const userRoutes = require('./routes/user.js');
 const corsOptions = {
-    origin: "https://yelp-camp-react-nu.vercel.app/",
+    origin: [
+        "https://yelp-camp-react-nu.vercel.app",
+        "http://localhost:3000",
+    ]
 };
 
 // Connect to MongoDB
