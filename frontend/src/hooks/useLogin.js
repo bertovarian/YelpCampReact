@@ -22,7 +22,7 @@ export const useLogin = () => {
       localStorage.setItem('user', JSON.stringify(data))
       dispatch({ type: 'LOGIN', payload: data })
       setIsLoading(false)
-      navigate(`${from} ? cosa = true`)
+      navigate(`${from}?cosa=true`)
     }
     catch (e) {
       setIsLoading(false)
