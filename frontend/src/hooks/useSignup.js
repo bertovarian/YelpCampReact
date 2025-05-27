@@ -13,11 +13,13 @@ export const useSignup = () => {
     setError(null)
     try {
       if (!storageUser) {
-        response = await axios.post('http://localhost:4000/api/register', { user }, {
+        // response = await axios.post('http://localhost:4000/api/register', { user }, {
+        response = await axios.post('https://yelpcampreact.onrender.com/api/register', { user }, {
           headers: { 'Content-Type': 'application/json' }
         })
       } else if (storageUser) {
-        response = await axios.patch(`http://localhost:4000/api/guest`, { user }, {
+        // response = await axios.patch(`http://localhost:4000/api/guest`, { user }, {
+        response = await axios.patch(`https://yelpcampreact.onrender.com/api/guest`, { user }, {
           headers: {
             'Authorization': `Bearer ${storageUser.token}`,
             'Content-Type': 'application/json'

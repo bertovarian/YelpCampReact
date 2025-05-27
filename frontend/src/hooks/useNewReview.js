@@ -5,7 +5,8 @@ export const useNewReview = () => {
     const { goError } = errUtils()
     const sendNewRev = async (review, id, location, user) => {
         try {
-            const response = await axios.post(`http://localhost:4000/api/campgrounds/${id}/reviews`, { review }, {
+            // const response = await axios.post(`http://localhost:4000/api/campgrounds/${id}/reviews`, { review }, {
+            const response = await axios.post(`https://yelpcampreact.onrender.com/api/campgrounds/${id}/reviews`, { review }, {
                 headers: {
                     'Authorization': `Bearer ${user.token}`,
                     'Content-Type': 'application/json'
@@ -18,3 +19,4 @@ export const useNewReview = () => {
     }
     return { sendNewRev }
 }
+

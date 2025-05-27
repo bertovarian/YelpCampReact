@@ -10,7 +10,8 @@ export const useNewCamp = () => {
     const { user } = useAuthContext()
     const sendNewCamp = async (campground, location = '/campgrounds') => {
         try {
-            const response = await axios.post('http://localhost:4000/api/campgrounds', campground, {
+            // const response = await axios.post('http://localhost:4000/api/campgrounds', campground, {
+            const response = await axios.post('https://yelpcampreact.onrender.com/api/campgrounds', campground, {
                 headers: {
                     'Authorization': `Bearer ${user.token}`,
                     'Content-Type': 'multipart/form-data'

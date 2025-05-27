@@ -7,7 +7,8 @@ export const useEditCamp = () => {
     const navigate = useNavigate()
     const editCamp = async (campground, id, location, user) => {
         try {
-            await axios.patch(`http://localhost:4000/api/campgrounds/${id}`, campground, {
+            // await axios.patch(`http://localhost:4000/api/campgrounds/${id}`, campground, {
+            await axios.patch(`https://yelpcampreact.onrender.com/api/campgrounds/${id}`, campground, {
                 headers: {
                     'Authorization': `Bearer ${user.token}`,
                     'Content-Type': 'multipart/form-data'
@@ -20,3 +21,4 @@ export const useEditCamp = () => {
     }
     return { editCamp }
 }
+

@@ -12,7 +12,8 @@ export const useCreateGuest = () => {
     const createGuest = async (location) => {
         try {
             const invitado = { username: `guest-${randomUUID()}` }
-            const response = await axios.post('http://localhost:4000/api/guest', { invitado }, {
+            // const response = await axios.post('http://localhost:4000/api/guest', { invitado }, {
+            const response = await axios.post('https://yelpcampreact.onrender.com/api/guest', { invitado }, {
                 headers: { 'Content-Type': 'application/json' }
             })
             const { data } = response
@@ -25,3 +26,4 @@ export const useCreateGuest = () => {
     }
     return { createGuest }
 }
+

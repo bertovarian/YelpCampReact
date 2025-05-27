@@ -7,7 +7,8 @@ export const useGuestToken = () => {
     const guestToken = async (user, location, aux = false) => {
         try {
             const invitado = { username: user.username }
-            const response = await axios.post(`http://localhost:4000/api/token`, { invitado }, {
+            // const response = await axios.post(`http://localhost:4000/api/token`, { invitado }, {
+            const response = await axios.post(`https://yelpcampreact.onrender.com/api/token`, { invitado }, {
                 headers: { 'Content-Type': 'application/json' }
             });
             return response.data.token

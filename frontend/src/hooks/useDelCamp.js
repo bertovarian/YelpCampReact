@@ -7,7 +7,8 @@ export const useDelCamp = () => {
     const navigate = useNavigate()
     const deleteCamp = async (id, location, user) => {
         try {
-            await axios.delete(`http://localhost:4000/api/campgrounds/${id}`, {
+            // await axios.delete(`http://localhost:4000/api/campgrounds/${id}`, {
+            await axios.delete(`https://yelpcampreact.onrender.com/api/campgrounds/${id}`, {
                 headers: {
                     'Authorization': `Bearer ${user.token}`
                 }
@@ -20,3 +21,4 @@ export const useDelCamp = () => {
     }
     return { deleteCamp }
 }
+

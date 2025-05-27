@@ -6,7 +6,8 @@ export const useDelGuest = () => {
     const { goError } = errUtils()
     const deleteGuest = async (token, location, aux = false) => {
         try {
-            await axios.delete(`http://localhost:4000/api/guest`, {
+            // await axios.delete(`http://localhost:4000/api/guest`, {
+            await axios.delete(`https://yelpcampreact.onrender.com/api/guest`, {
                 headers: { 'Authorization': `Bearer ${token}` }
             });
             logout(aux)
@@ -17,3 +18,4 @@ export const useDelGuest = () => {
     }
     return { deleteGuest }
 }
+
