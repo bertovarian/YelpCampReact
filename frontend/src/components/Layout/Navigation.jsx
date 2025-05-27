@@ -36,7 +36,7 @@ function Navigation() {
         <>
             <Navbar style={{ borderRadius: '25px', width: '70%' }} className='mt-1 mx-auto' sticky="top" bg="dark" data-bs-theme="dark" collapseOnSelect expand="lg">
                 <Container fluid className='mx-md-2'>
-                    <Navbar.Brand href="#home">YelpCamp</Navbar.Brand>
+                    <Navbar.Brand as={Link} to="/campgrounds">YelpCamp</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav>
