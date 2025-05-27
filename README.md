@@ -2,6 +2,9 @@
 
 YelpCampReact is a full-stack web application inspired by Colt Steele's original **YelpCamp** project. This version builds upon the foundation of the classic project with modern improvements, including a React-based frontend, integration of interactive maps using Mapbox, weather forecasting via OpenWeatherMap API, and enhanced user experience with responsive design and advanced features like clustering for map markers. Unlike the original project, which used EJS templates and a more backend-centric approach, this version leverages React for a dynamic and component-based frontend architecture.
 
+**The project is deployed and available here:**  
+[https://yelp-camp-react-nu.vercel.app/](https://yelp-camp-react-nu.vercel.app/)
+
 ## Features
 
 - **Campground Listings**: Browse a collection of campgrounds with detailed descriptions, images, and pricing.
@@ -11,7 +14,6 @@ YelpCampReact is a full-stack web application inspired by Colt Steele's original
 - **Weather Forecast**: Get a 5-day/3-hour weather forecast for each campground location using OpenWeatherMap API.
 - **Responsive Design**: Fully responsive layout for seamless use on desktop and mobile devices.
 - **Guest Mode**: Create campgrounds and give reviews without needing to register or log in.
-
 
 ## Technologies Used
 
