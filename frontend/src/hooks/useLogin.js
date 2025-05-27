@@ -14,14 +14,15 @@ export const useLogin = () => {
     setError(null)
     try {
       const user = { username, password }
-      const response = await axios.post('http://localhost:4000/api/login', { user }, {
+      // const response = await axios.post('http://localhost:4000/api/login', { user }, 
+      const response = await axios.post('https://yelpcampreact.onrender.com/api/login', { user }, {
         headers: { 'Content-Type': 'application/json' }
       })
       const { data } = response
       localStorage.setItem('user', JSON.stringify(data))
       dispatch({ type: 'LOGIN', payload: data })
       setIsLoading(false)
-      navigate(`${from}?cosa=true`)
+      navigate(`${from} ? cosa = true`)
     }
     catch (e) {
       setIsLoading(false)
