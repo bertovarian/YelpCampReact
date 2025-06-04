@@ -9,7 +9,6 @@ import Signup from './views/Signup'
 import RequireAuth from './components/RequireAuth'
 import Login from './views/Login'
 import Boilerplate from './components/Layout/Boilerplate'
-
 import LandingPage from './views/LandingPage'
 
 function App() {
